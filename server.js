@@ -7,11 +7,11 @@ const app = express();
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
+app.get('/Recaptcha/', (req, res) => {
+  res.sendFile(__dirname + '/Recaptcha/index.html');
 });
 
-app.post('/subscribe', (req, res) => {
+app.post('/Recaptcha/subscribe', (req, res) => {
   if (
     req.body.captcha === undefined ||
     req.body.captcha === '' ||

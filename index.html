@@ -40,7 +40,7 @@
       const email = document.querySelector('#email').value;
       const captcha = document.querySelector('#g-recaptcha-response').value;
       
-      fetch('/subscribe', {
+      fetch('/Recaptcha/subscribe', {
         method: 'POST',
         headers: {
           'Accept': 'application/json, text/plain, */*',
