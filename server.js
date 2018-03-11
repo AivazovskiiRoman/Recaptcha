@@ -21,7 +21,7 @@ app.post('/Recaptcha/subscribe', (req, res) => {
   }
 
   // Secret key
-  const secretKey = '6Lc37ksUAAAAAA3siDQgSDiSLfgdrLo5MMjEKgGh';
+  const secretKey = '6Lf16EsUAAAAAFgSuyqx6BYAIriEMlwG2pPvY_G6';
 
   // Verify URL
   const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${req.body.captcha}&remoteip${req.connection.remoteAddress}`;
