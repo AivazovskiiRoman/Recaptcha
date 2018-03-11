@@ -21,7 +21,7 @@ app.post('/subscribe', (req, res) => {
   }
 
   // Secret key
-  const secretKey = '6LcuJjQUAAAAAHknCKafaonyXFMrIci4g9YFwJ9P';
+  const secretKey = '6Lc37ksUAAAAAA3siDQgSDiSLfgdrLo5MMjEKgGh';
 
   // Verify URL
   const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${req.body.captcha}&remoteip${req.connection.remoteAddress}`;
